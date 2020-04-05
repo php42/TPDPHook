@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="TPDPHook">
+      <UniqueIdentifier>{a15387ba-60b9-44c2-8a8c-8ba578862b4e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Hooks">
+      <UniqueIdentifier>{7c1012d7-d4b8-4171-b9b0-ad404c1865bd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Hooks\dxgi">
+      <UniqueIdentifier>{12c386f7-3764-43fb-9371-795c848d4905}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Hooks\tpdp">
+      <UniqueIdentifier>{ce21f185-091b-4416-a79e-eac9a64bebdb}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="ini_parser.cpp">
+      <Filter>TPDPHook</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>TPDPHook</Filter>
+    </ClCompile>
+    <ClCompile Include="dxgi\hook_dxgi.cpp">
+      <Filter>Hooks\dxgi</Filter>
+    </ClCompile>
+    <ClCompile Include="tpdp\hook_tpdp.cpp">
+      <Filter>Hooks\tpdp</Filter>
+    </ClCompile>
+    <ClCompile Include="log.cpp">
+      <Filter>TPDPHook</Filter>
+    </ClCompile>
+    <ClCompile Include="hook.cpp">
+      <Filter>TPDPHook</Filter>
+    </ClCompile>
+    <ClCompile Include="tpdp\tpdp_data.cpp">
+      <Filter>Hooks\tpdp</Filter>
+    </ClCompile>
+    <ClCompile Include="tpdp\custom_skills.cpp">
+      <Filter>Hooks\tpdp</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="exports.def">
+      <Filter>Resource Files</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ini_parser.h">
+      <Filter>TPDPHook</Filter>
+    </ClInclude>
+    <ClInclude Include="dxgi\hook_dxgi.h">
+      <Filter>Hooks\dxgi</Filter>
+    </ClInclude>
+    <ClInclude Include="tpdp\hook_tpdp.h">
+      <Filter>Hooks\tpdp</Filter>
+    </ClInclude>
+    <ClInclude Include="log.h">
+      <Filter>TPDPHook</Filter>
+    </ClInclude>
+    <ClInclude Include="version.h">
+      <Filter>TPDPHook</Filter>
+    </ClInclude>
+    <ClInclude Include="tpdp\mem_structs.h">
+      <Filter>Hooks\tpdp</Filter>
+    </ClInclude>
+    <ClInclude Include="hook.h">
+      <Filter>TPDPHook</Filter>
+    </ClInclude>
+    <ClInclude Include="tpdp\tpdp_data.h">
+      <Filter>Hooks\tpdp</Filter>
+    </ClInclude>
+    <ClInclude Include="tpdp\custom_skills.h">
+      <Filter>Hooks\tpdp</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
