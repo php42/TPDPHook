@@ -207,8 +207,8 @@ int skill_realm(int player, int terrain, int weather)
 	if(godstone_hack && ((held_item == 303) || ((weather + 303) == held_item)))
 		min_duration = 8;
 
-	int weather_duration = (stargazer_hack && has_stargazer) ? 0x7ffffff5 : 5; // value apparently used by weather skills with stargazer
-	int terrain_duration = (timegazer_hack && has_timegazer) ? 8 : min_duration;
+	int weather_duration = (stargazer_hack && has_stargazer) ? 0x7ffffff5 : min_duration; // value apparently used by weather skills with stargazer
+	int terrain_duration = (timegazer_hack && has_timegazer) ? 8 : 5;
 
 	switch(skill_state)
 	{
